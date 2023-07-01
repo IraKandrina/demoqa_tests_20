@@ -36,6 +36,6 @@ public class RegistrationWithPageObjectsTests extends TestBase {
                 .verifyResult("Picture", "picture.jpg")
                 .verifyResult("Address", "St Petersburg Palace Square 1")
                 .verifyResult("State and City", "NCR Delhi")
-                .closModalWindow();
+                .closeModalWindow();
     }
 }

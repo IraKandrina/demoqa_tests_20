@@ -1,7 +1,6 @@
 package com.demoqa.tests;
 
 import com.demoqa.pages.TextBoxPage;
-import com.demoqa.tests.TestBase;
 import org.junit.jupiter.api.Test;
 
 public class TextBoxWithPageObjectsTests extends TestBase {

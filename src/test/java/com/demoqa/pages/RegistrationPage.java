@@ -73,7 +73,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage setSubject(String value) {
-        subjectInput.setValue(value).pressEnter();;
+        subjectInput.setValue(value).pressEnter();
         return this;
     }
 
@@ -119,7 +119,7 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage closModalWindow() {
+    public RegistrationPage closeModalWindow() {
         verifyResults.closeModalDialog();
         return this;
     }
