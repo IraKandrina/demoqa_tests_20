@@ -31,7 +31,11 @@ public class RegistrationPage {
 
     public RegistrationPage openPage() {
         open("automation-practice-form");
-        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+        return this;
+    }
+
+    public RegistrationPage verifyWindowTitle(String value){
+        $(".practice-form-wrapper").shouldHave(text(value));
         return this;
     }
 

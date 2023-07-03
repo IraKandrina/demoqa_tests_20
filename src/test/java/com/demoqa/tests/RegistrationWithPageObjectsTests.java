@@ -9,6 +9,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
     @Test
     void fillRegistrationForm() {
         registrationPage.openPage()
+                .verifyWindowTitle("Student Registration Form")
                 .closeBanners()
                 .setFirstName("Ivan")
                 .setLastName("Ivanov")
