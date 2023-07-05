@@ -10,10 +10,10 @@ public class RandomData {
     public String userEmail = faker.internet().emailAddress();
     public String gender = faker.options().option("Male", "Female", "Other");
     public String userNumber = 8 + faker.phoneNumber().subscriberNumber(9);
-    public String birthDay = String.format("%s", faker.number().numberBetween(1,30));
+    public String birthDay = String.valueOf(faker.number().numberBetween(1, 28));
     public String birthMonth = faker.options().option("January", "February", "March", "April",
             "May", "June", "July", "August", "September", "October", "November", "December");
-    public String birthYear = String.valueOf(faker.number().numberBetween(1900, 2023));
+    public String birthYear = String.valueOf(faker.number().numberBetween(1950, 2022));
     public String subject = faker.options().option("Arts", "Accounting", "Biology", "Chemistry",
             "Computer Science", "Commerce", "Civics", "English", "History", "Math");
     public String hobby = faker.options().option("Sports", "Reading", "Music");
@@ -32,8 +32,9 @@ public class RandomData {
             case "Haryana":
                 city = faker.options().option("Karnal", "Panipat");
                 break;
-            case "Rajasthan" :
+            case "Rajasthan":
                 city = faker.options().option("Jaipur", "Jaiselmer");
+                break;
             default:
                 city = "";
         }
