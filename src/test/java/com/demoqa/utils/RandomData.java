@@ -22,7 +22,6 @@ public class RandomData {
     public String city = getRandomCity(state);
 
     public String getRandomCity(String state) {
-        String city = "";
         switch (state){
             case "NCR":
                 city =  faker.options().option("Delhi", "Gurgaon", "Noida");
