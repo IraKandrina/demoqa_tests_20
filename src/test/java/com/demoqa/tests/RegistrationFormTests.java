@@ -2,6 +2,7 @@ package com.demoqa.tests;
 
 import com.codeborne.selenide.*;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -19,6 +20,7 @@ public class RegistrationFormTests {
     }
 
     @Test
+    @Tag("remote")
     void fillRegistrationForm() {
         open("automation-practice-form");
         executeJavaScript("$('#fixedban').remove()");
