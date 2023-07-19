@@ -9,15 +9,15 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class RegistrationFormTests {
+public class RegistrationFormTests extends RemoteTestBase{
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.baseUrl = "https://demoqa.com/";
-        Configuration.browserSize = "1920x1080";
-        Configuration.holdBrowserOpen = true;
-        Configuration.pageLoadStrategy = "eager";
-    }
+//    @BeforeAll
+//    static void beforeAll() {
+//        Configuration.baseUrl = "https://demoqa.com/";
+//        Configuration.browserSize = "1920x1080";
+//        Configuration.holdBrowserOpen = true;
+//        Configuration.pageLoadStrategy = "eager";
+//    }
 
     @Test
     @Tag("remote")
