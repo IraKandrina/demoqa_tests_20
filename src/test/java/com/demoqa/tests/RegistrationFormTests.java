@@ -1,7 +1,5 @@
 package com.demoqa.tests;
 
-import com.codeborne.selenide.*;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,14 +11,6 @@ import static io.qameta.allure.Allure.step;
 
 
 public class RegistrationFormTests extends RemoteTestBase{
-
-//    @BeforeAll
-//    static void beforeAll() {
-//        Configuration.baseUrl = "https://demoqa.com/";
-//        Configuration.browserSize = "1920x1080";
-//        Configuration.holdBrowserOpen = true;
-//        Configuration.pageLoadStrategy = "eager";
-//    }
 
     @Test
     @Tag("remote")
