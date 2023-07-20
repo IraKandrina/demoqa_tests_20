@@ -30,11 +30,11 @@ dependencies {
             'io.qameta.allure:allure-selenide:2.19.0')
 }
 
-tasks.withType(JavaCompile).configureEach {
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-tasks.withType(Test).configureEach {
+tasks.withType(Test) {
     systemProperties(System.getProperties())
 
     testLogging {
