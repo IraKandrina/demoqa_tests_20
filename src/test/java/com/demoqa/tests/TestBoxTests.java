@@ -17,6 +17,7 @@ public class TestBoxTests extends RemoteTestBase{
     void fillTextBox() {
         step("Open textbox", () -> {
             open("text-box");
+            executeJavaScript("$('#fixedban').remove()");
             executeJavaScript("$('footer').remove()");
         });
 
