@@ -2,6 +2,8 @@ package com.demoqa.utils;
 
 import com.github.javafaker.Faker;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class RandomData {
     Faker faker = new Faker();
 
@@ -10,7 +12,7 @@ public class RandomData {
     public String userEmail = faker.internet().emailAddress();
     public String gender = faker.options().option("Male", "Female", "Other");
     public String userNumber = 8 + faker.phoneNumber().subscriberNumber(9);
-    public String birthDay = String.valueOf(faker.number().numberBetween(1, 31));
+    public String birthDay = String.valueOf(faker.number().numberBetween(10, 28));
     public String birthMonth = faker.options().option("January", "February", "March", "April",
             "May", "June", "July", "August", "September", "October", "November", "December");
     public String birthYear = String.valueOf(faker.number().numberBetween(1900, 2023));
