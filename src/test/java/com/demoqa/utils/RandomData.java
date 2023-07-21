@@ -2,8 +2,6 @@ package com.demoqa.utils;
 
 import com.github.javafaker.Faker;
 
-import java.util.concurrent.ThreadLocalRandom;
-
 public class RandomData {
     Faker faker = new Faker();
 
