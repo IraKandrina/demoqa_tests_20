@@ -31,4 +31,7 @@ public interface WebConfig extends Config {
     @Key("remoteUrl")
     @DefaultValue("https://user1:1234@selenoid.autotests.cloud/wd/hub")
     String remoteUrl();
+
+    @Key("videoStorage")
+    String videoStorage();
 }

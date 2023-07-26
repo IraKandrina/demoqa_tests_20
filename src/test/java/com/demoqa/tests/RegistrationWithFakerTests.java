@@ -34,8 +34,8 @@ public class RegistrationWithFakerTests extends RemoteTestBase {
 
         step("Open page", () -> {
             registrationPage.openPage()
-                    .verifyWindowTitle(windowTitle)
-                    .closeBanners();
+                    .closeBanners()
+                    .verifyWindowTitle(windowTitle);
         });
 
         step("Submit data", () -> {
