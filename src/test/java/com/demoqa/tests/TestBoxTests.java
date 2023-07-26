@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.executeJavaScript;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class TestBoxTests extends RemoteTestBase{
+public class TestBoxTests extends RemoteTestBase {
 
     @Test
     @Tag("remote")

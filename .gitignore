@@ -3,3 +3,4 @@
 /.gradle
 *.class
 /notifications
+/unused
